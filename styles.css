@@ -690,3 +690,111 @@ figcaption { font-size: .86rem; line-height: 1.5; color: var(--muted); text-alig
 
 /* Artículos sin imagen de portada: separación entre el encabezado y el texto */
 .reader-header + .reader-content { margin-top: clamp(32px, 5vw, 56px); }
+
+/* Cita con autor */
+.reader-content blockquote .quote-text { margin: 0; }
+.reader-content blockquote .quote-cite { display: block; margin-top: 12px; font: 600 .92rem/1.4 var(--font-body); font-style: normal; color: var(--muted); letter-spacing: 0; }
+
+/* -------------------------------------------------------------------------
+   16. Bloques visuales de artículo: cifras, pilares, mosaico y videos
+   ------------------------------------------------------------------------- */
+.article-stats {
+  display: flex; flex-wrap: wrap; gap: 1px;
+  margin: 40px 0; border-radius: var(--radius); overflow: hidden;
+  background: var(--line); border: 1px solid var(--line);
+}
+.article-stats .stat { flex: 1 1 160px; background: var(--paper); padding: 20px 18px; display: flex; flex-direction: column; gap: 8px; }
+.article-stats strong {
+  font: 700 clamp(2rem, 6vw, 2.8rem)/1 var(--font-heading); letter-spacing: -.04em; color: var(--brand-ink);
+  background: linear-gradient(transparent 62%, var(--yellow-40) 62%); align-self: flex-start; padding-right: 4px;
+}
+.article-stats span { font-size: .78rem; line-height: 1.35; color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: .06em; }
+
+.article-pillars { display: grid; gap: 12px; margin: 28px 0 36px; }
+.pillar {
+  position: relative; overflow: hidden; padding: 22px 22px 22px 24px; border-radius: var(--radius);
+  background: var(--brand-ink); color: #fff;
+  transition: transform var(--t) var(--ease), box-shadow var(--t);
+}
+.pillar::after { content: ''; position: absolute; right: -40px; top: -40px; width: 120px; height: 120px; border-radius: 50%; border: 1px solid rgb(252 180 41 / .35); }
+.pillar:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+.pillar-num { display: block; font: 700 .85rem/1 var(--font-heading); color: var(--brand-yellow); letter-spacing: .08em; margin-bottom: 10px; }
+.pillar strong { font: 600 1.25rem/1.25 var(--font-heading); }
+.pillar p { color: #d9d9db; margin-top: 8px; font-size: .95rem; line-height: 1.55; }
+
+.article-mosaic { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin: 32px 0 40px; }
+.article-mosaic figure { margin: 0; position: relative; overflow: hidden; border-radius: var(--radius-sm); background: var(--surface); }
+.article-mosaic figure:first-child { grid-column: 1 / -1; }
+.article-mosaic img { width: 100%; height: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 0; transition: transform var(--t-slow) var(--ease); }
+.article-mosaic img.zoomable-photo:hover { transform: scale(1.04); box-shadow: none; }
+.article-mosaic figcaption {
+  position: absolute; left: 0; right: 0; bottom: 0; margin: 0; max-width: none; text-align: left;
+  padding: 28px 12px 10px; font-size: .78rem; line-height: 1.35; color: #fff;
+  background: linear-gradient(transparent, rgb(20 18 19 / .78)); pointer-events: none;
+}
+.article-mosaic.mosaic-contain img { aspect-ratio: auto; object-fit: contain; height: auto; }
+.article-mosaic.mosaic-contain figure:first-child { grid-column: auto; }
+.article-mosaic.mosaic-contain { align-items: center; }
+
+.article-video-group { display: grid; gap: 20px; margin: 32px 0; align-items: start; }
+.article-video-group .article-local-video { margin: 0; }
+.video-caption { font-size: .86rem; color: var(--muted); margin-top: 10px; line-height: 1.45; }
+
+@media (min-width: 640px) {
+  .article-pillars { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .article-mosaic { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .article-mosaic figure:first-child { grid-column: span 2; grid-row: span 2; }
+  .article-mosaic figure:first-child img { aspect-ratio: auto; height: 100%; }
+  .article-mosaic.mosaic-contain { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .article-mosaic.mosaic-contain figure:first-child { grid-column: auto; grid-row: auto; }
+  .article-mosaic.mosaic-contain figure:first-child img { height: auto; }
+  .article-video-group { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+/* Las piezas anchas (fuera de la columna de texto) aprovechan más espacio en escritorio */
+@media (min-width: 1100px) {
+  .reader-content > .article-mosaic, .reader-content > .article-stats, .reader-content > .article-video-group { margin-inline: -120px; }
+}
+@media (max-width: 639px) {
+  .article-mosaic:not(.mosaic-contain) figure:not(:first-child) figcaption { display: none; }
+  .article-mosaic:not(.mosaic-contain) figure:last-child:nth-child(even) { grid-column: 1 / -1; }
+}
+
+/* Par de imágenes del mismo tamaño y alineadas */
+.article-mosaic.mosaic-pair { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: stretch; }
+.article-mosaic.mosaic-pair figure, .article-mosaic.mosaic-pair figure:first-child { grid-column: auto; grid-row: auto; }
+.article-mosaic.mosaic-pair img, .article-mosaic.mosaic-pair figure:first-child img { aspect-ratio: 4 / 5; height: 100%; object-fit: cover; }
+@media (max-width: 639px) { .article-mosaic.mosaic-pair figure figcaption { display: block; } }
+
+/* Mismo estilo tipográfico que «Dirección de Proyectos e Investigación» y sin burbujas */
+.hero-eyebrow, .issue-pill, .area-total {
+  font-family: var(--font-body); font-size: .95rem; font-weight: 400; line-height: 1.3;
+  text-transform: none; letter-spacing: normal; color: var(--muted);
+}
+.issue-pill, .area-total { background: none; padding: 0; border-radius: 0; }
+
+/* Cifras destacadas: tarjetas independientes con resaltado al pasar el cursor */
+.article-stats { gap: 12px; background: none; border: 0; border-radius: 0; overflow: visible; }
+.article-stats .stat {
+  position: relative; overflow: hidden; flex: 1 1 150px; gap: 10px;
+  padding: 24px 20px 22px; border: 1px solid var(--line); border-radius: var(--radius);
+  background: var(--paper); cursor: default;
+  transition: transform var(--t) var(--ease), box-shadow var(--t) var(--ease), border-color var(--t), background-color var(--t);
+}
+.article-stats .stat::before { /* barra de acento que crece al pasar el cursor */
+  content: ''; position: absolute; left: 0; top: 0; height: 4px; width: 32px;
+  background: var(--brand-yellow); border-radius: 0 0 4px 0;
+  transition: width var(--t) var(--ease);
+}
+.article-stats strong {
+  background: none; padding: 0; color: var(--brand-ink);
+  font-size: clamp(2.2rem, 5vw, 2.9rem); transition: color var(--t), transform var(--t) var(--ease-spring);
+  transform-origin: left bottom;
+}
+.article-stats span { transition: color var(--t); }
+.article-stats .stat:hover {
+  transform: translateY(-6px); box-shadow: var(--shadow-lg);
+  border-color: transparent; background: var(--brand-ink);
+}
+.article-stats .stat:hover::before { width: 100%; }
+.article-stats .stat:hover strong { color: var(--brand-yellow); transform: scale(1.06); }
+.article-stats .stat:hover span { color: #e6e6e8; }

@@ -1,0 +1,31 @@
+BOLETÍN DPI · CFIA — EDICIÓN 02
+Paquete completo para publicación — 30 de setiembre de 2026
+
+PUBLICACIÓN
+1. Descomprima este ZIP.
+2. Suba index.html, styles.css, script.js, contenido.js y la carpeta assets a la carpeta pública de su alojamiento (por ejemplo, public_html o una subcarpeta /boletin/).
+3. Mantenga los nombres y la estructura de carpetas. index.html debe quedar en la raíz de la carpeta donde se publique el boletín.
+4. Abra la dirección web correspondiente y recorra la portada, las cinco áreas y los diez artículos.
+
+REQUISITOS
+Sitio estático HTML, CSS y JavaScript. No necesita compilación, Node.js, base de datos ni instalación de paquetes. El alojamiento debe servir los archivos con sus tipos MIME habituales y permitir JavaScript en el navegador. Se recomienda HTTPS.
+Las rutas de artículos usan fragmentos (#articulo/...), por lo que no requieren reglas de reescritura.
+
+CONTENIDO
+index.html: estructura de la portada y navegación.
+styles.css: diseño mobile-first con variables de marca, tarjetas y bento grid, micro-interacciones y justificación de párrafos.
+script.js: navegación (menú fijo y hamburguesa), scroll suave con sección activa, animaciones de entrada, lectura de artículos y ampliación de fotografías.
+contenido.js: artículos, autores, fechas y fuentes.
+assets/: imágenes, logotipos y video local BIM CON 2026.
+
+CONEXIONES EXTERNAS
+La entrevista de YouTube necesita conexión a internet y que YouTube permita la reproducción insertada. Incluye enlace alternativo.
+Las fuentes y sitios externos abren en una nueva pestaña. El repositorio SharePoint requiere los permisos de la organización.
+El video de BIM CON está incluido en assets.
+
+REVISIÓN ANTES DE DIFUNDIR
+Compruebe la reproducción de videos, las imágenes y la navegación en móvil y escritorio en el alojamiento elegido.
+El paquete no incluye autenticación: el acceso lo determina el alojamiento donde se publique.
+
+EDICIÓN
+Para actualizar notas, edite contenido.js conservando su sintaxis JavaScript. Para reemplazar imágenes, guárdelas en assets y actualice sus rutas. No modifique los identificadores de artículos si desea conservar sus enlaces.

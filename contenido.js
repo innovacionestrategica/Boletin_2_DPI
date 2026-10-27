@@ -30,6 +30,7 @@ window.BOLETIN = {
     }
   ],
   "featured": [
+    "bim-con-2026",
     "reporte-infraestructura-2026",
     "refrigeracion-sostenible",
     "autodesk-forma-ia-bim"
@@ -1150,145 +1151,319 @@ window.BOLETIN = {
     {
       "id": "bim-con-2026",
       "area": "gestion-bim",
-      "title": "BIM CON 2026: Costa Rica se prepara para dos días de transformación digital en la construcción",
-      "summary": "El 14 y 15 de octubre, el CFIA reunirá a especialistas nacionales e internacionales para analizar cómo el modelado de información de la construcción (BIM) está cambiando la forma de diseñar, construir y operar la infraestructura del país.",
+      "title": "BIM CON 2026: Innovación al servicio",
+      "summary": "Cerca de 500 personas vivieron dos días de conferencias, talleres y reconocimientos en la sexta edición del congreso BIM del CFIA.",
       "author": "Arq. Miguel A. Vega Vargas",
-      "date": "23 setiembre 2026",
-      "image": "assets/bim-con-2026.webp",
-      "imageAlt": "BIM CON CFIA 2026. 14 y 15 de octubre. Wyndham San José Herradura Hotel & Convention Center.",
-      "imageFit": "contain",
+      "date": "27 octubre 2026",
+      "image": "assets/bimcon-apertura.jpg",
+      "imageAlt": "Apertura de BIM CON CFIA 2026 «Innovación al Servicio», con un orador en el podio frente a la pantalla principal y el público.",
       "blocks": [
         {
           "type": "lead",
-          "text": "El 14 y 15 de octubre, el CFIA reunirá a especialistas nacionales e internacionales para analizar cómo el modelado de información de la construcción (BIM) está cambiando la forma de diseñar, construir y operar la infraestructura del país."
+          "text": "El 14 y 15 de octubre, el CFIA celebró la sexta edición del Congreso BIM CON 2026, bajo el lema «Innovación al Servicio», en el Hotel Wyndham San José Herradura. Cerca de 500 personas —profesionales, estudiantes, empresas, instituciones públicas, municipalidades y representantes de la academia— se reunieron para compartir experiencias y conocimientos sobre la transformación digital del sector AECO (Arquitectura, Ingeniería, Construcción y Operaciones)."
+        },
+        {
+          "type": "stats",
+          "items": [
+            {
+              "value": "6.ª",
+              "label": "edición del congreso"
+            },
+            {
+              "value": "≈500",
+              "label": "personas participantes"
+            },
+            {
+              "value": "2",
+              "label": "días de conferencias y talleres"
+            },
+            {
+              "value": "3",
+              "label": "ejes temáticos"
+            },
+            {
+              "value": "6",
+              "label": "categorías en los BIM CON Awards"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Dos días que conectaron al sector"
         },
         {
           "type": "paragraph",
-          "text": "La construcción en Costa Rica avanza hacia lo digital, y BIM CON 2026 será uno de los principales espacios para conocer ese cambio de cerca. El Colegio Federado de Ingenieros y de Arquitectos (CFIA) realizará el 14 y 15 de octubre este congreso, presentado como \"la convención BIM de Costa Rica dedicada a la innovación y el futuro de la construcción\". La sede será el Wyndham San José Herradura Hotel & Convention Center."
+          "text": "El congreso tuvo como propósito promover la metodología BIM como estrategia colaborativa para integrar disciplinas, procesos y tecnologías durante el ciclo de vida de los proyectos."
         },
         {
           "type": "paragraph",
-          "text": "El encuentro propone \"dos días de inmersión en Building Information Modeling para la industria de la construcción de Costa Rica y la región\", con conferencias magistrales, talleres prácticos y espacios de networking. El objetivo es conectar a profesionales, empresas e instituciones en torno a la transformación digital del sector."
+          "text": "El salón principal se convirtió en un punto de encuentro donde coincidieron quienes diseñan, construyen, revisan, enseñan y gestionan proyectos, con una misma conversación: cómo la información compartida puede transformar la forma de trabajar del sector."
         },
         {
           "type": "local-video",
-          "src": "assets/bim-con-2026-video.mp4",
-          "title": "Video de BIM CON 2026"
+          "src": "assets/bimcon-video-evento.mp4",
+          "title": "Así se vivió BIM CON 2026",
+          "caption": "Así se vivió BIM CON 2026 en el salón principal."
         },
         {
           "type": "heading",
-          "text": "Seis ejes para entender el BIM"
+          "text": "Tres ejes, una misma visión"
         },
         {
           "type": "paragraph",
-          "text": "El programa gira en torno a seis ejes temáticos que recorren todo el ciclo de vida de un proyecto:"
+          "text": "El programa se articuló en tres ejes temáticos que guiaron las conferencias y los talleres: Innovación Aplicada, Buenas Prácticas y Acceso al Futuro."
+        },
+        {
+          "type": "image",
+          "src": "assets/bimcon-ejes.jpg",
+          "alt": "Pieza gráfica de BIM CON CFIA 2026 con sus tres ejes temáticos: Innovación Aplicada, Buenas Prácticas y Acceso al Futuro.",
+          "caption": "Identidad gráfica y ejes temáticos de BIM CON 2026."
+        },
+        {
+          "type": "heading",
+          "text": "Conocimiento compartido desde el escenario"
+        },
+        {
+          "type": "paragraph",
+          "text": "Mediante conferencias y talleres prácticos, especialistas nacionales e internacionales compartieron experiencias sobre gestión de proyectos, realidad virtual, adopción BIM en pequeñas y medianas empresas, inteligencia artificial e infraestructura. Estos espacios favorecieron el intercambio de conocimientos y la conexión entre profesionales y organizaciones."
+        },
+        {
+          "type": "mosaic",
+          "images": [
+            {
+              "src": "assets/bimcon-conferencia-sala.jpg",
+              "alt": "Asistentes siguen una conferencia proyectada en las pantallas del salón.",
+              "caption": "Conferencias ante un salón lleno durante los dos días del congreso."
+            },
+            {
+              "src": "assets/bimcon-aeropuerto.jpg",
+              "alt": "Conferencista presenta antecedentes de la ampliación del Aeropuerto Juan Santamaría.",
+              "caption": "Casos de infraestructura, como la evolución del Aeropuerto Juan Santamaría."
+            },
+            {
+              "src": "assets/bimcon-hbim.jpg",
+              "alt": "Conferencista explica HBIM, la aplicación de BIM al patrimonio edificado.",
+              "caption": "HBIM: BIM aplicado al estudio y la conservación del patrimonio."
+            },
+            {
+              "src": "assets/bimcon-escenario.jpg",
+              "alt": "Orador en el escenario principal de BIM CON 2026.",
+              "caption": "Escenario principal de BIM CON 2026."
+            },
+            {
+              "src": "assets/bimcon-ponente.jpg",
+              "alt": "Ponente en el podio frente a un auditorio con cientos de asistentes.",
+              "caption": "Cientos de asistentes en cada sesión."
+            },
+            {
+              "src": "assets/bimcon-asistentes.jpg",
+              "alt": "Asistentes atentos a una de las conferencias.",
+              "caption": "Profesionales, estudiantes e instituciones en un mismo espacio."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Hitos de esta edición"
+        },
+        {
+          "type": "paragraph",
+          "text": "Entre los principales hitos destacaron la presentación oficial de las Guías BIM de Costa Rica y la ceremonia de los BIM CON Awards, orientada a reconocer proyectos innovadores y eficientes del sector."
+        },
+        {
+          "type": "link",
+          "text": "Lea también: Guía Ejecutiva BIM, una ruta práctica para avanzar juntos",
+          "url": "#articulo/guia-ejecutiva-bim"
+        },
+        {
+          "type": "paragraph",
+          "text": "Los BIM CON Awards premiaron seis categorías de participación:"
         },
         {
           "type": "list",
           "items": [
             {
-              "text": "Adopción y estándares BIM"
+              "label": "Diseño de vivienda",
+              "text": "proyectos residenciales en etapa de diseño."
             },
             {
-              "text": "Diseño y coordinación"
+              "label": "Diseño de infraestructura",
+              "text": "proyectos no residenciales en etapa de diseño."
             },
             {
-              "text": "Construcción digital"
+              "label": "Construcción de vivienda",
+              "text": "proyectos residenciales en etapa de construcción."
             },
             {
-              "text": "Operación y mantenimiento"
+              "label": "Construcción de infraestructura",
+              "text": "proyectos no residenciales en etapa de construcción."
             },
             {
-              "text": "Tecnología e interoperabilidad"
+              "label": "Desarrollo e innovación BIM",
+              "text": "herramientas, automatizaciones y tecnologías avanzadas."
             },
             {
-              "text": "Sostenibilidad y eficiencia"
+              "label": "Academia y formación BIM",
+              "text": "iniciativas educativas impulsadas por universidades e instituciones."
             }
           ]
         },
         {
-          "type": "paragraph",
-          "text": "El enfoque busca combinar conocimiento aplicado a partir de casos reales de implementación, el fortalecimiento de la comunidad profesional y una mirada a las tendencias que marcarán el futuro de la industria."
-        },
-        {
-          "type": "heading",
-          "text": "Voces de la región"
-        },
-        {
-          "type": "paragraph",
-          "text": "El congreso contará con conferencistas de México, República Dominicana, Panamá y Costa Rica."
-        },
-        {
-          "type": "paragraph",
-          "text": "El primer día, MSc. Emanuel Pérez (República Dominicana) presentará \"Innovación en Servicio: De la Mente al Cliente\". MSc. Johnny Aguirre (Costa Rica) hablará sobre cómo pasar \"De presentar proyectos a hacerlos vivir\", y el Ing. Juan Carlos Alfonso Pacheco (México) cerrará la jornada con \"De lo técnico operativo a lo estratégico\"."
-        },
-        {
-          "type": "paragraph",
-          "text": "La agenda también incluye la experiencia del sector público y académico. Habrá presentaciones de la Red BIM Gob LATAM y de la Comisión Interinstitucional BIM CR, y la Arq. Sofía Artavia presentará el Laboratorio de Construcción Virtual de la Universidad de Costa Rica."
-        },
-        {
-          "type": "paragraph",
-          "text": "El segundo día, el Arq. Walter Rovira (Panamá) abordará el \"BIM 7D para Infraestructura Hospitalaria\". La Arq. Brenda Jiménez (República Dominicana) expondrá las \"Oportunidades de una tramitología con BIM\", un tema clave para agilizar los permisos de construcción. Se sumarán el caso educativo \"Del aula al CDE\", del Cedes Don Bosco, y la experiencia del equipo AERIS CR en un proyecto de ampliación de terminal aeroportuaria."
-        },
-        {
-          "type": "paragraph",
-          "text": "Uno de los momentos más esperados será el lanzamiento y presentación de las Guías BIM, a cargo del Ing. Ariel Castillo. Estas guías serán una herramienta de referencia para estandarizar la adopción de la metodología en el país."
-        },
-        {
-          "type": "heading",
-          "text": "Talleres y premiación"
-        },
-        {
-          "type": "paragraph",
-          "text": "Las mañanas de ambos días estarán dedicadas a talleres especializados: Gestión de Proyectos, Taller Intercolegial, Estándar BIM, Taller CEO y Taller Academia."
-        },
-        {
-          "type": "paragraph",
-          "text": "El congreso cerrará con la sexta edición de los BIM CON Awards, que reconocen a proyectos y profesionales destacados en la implementación de BIM. Además, el primer día se premiará a los participantes del Taller Intercolegial."
-        },
-        {
-          "type": "heading",
-          "text": "Inscripciones"
-        },
-        {
-          "type": "paragraph",
-          "text": "La inscripción incluye acceso a todas las sesiones y talleres, materiales, certificado de participación y actividades de networking. Las tarifas son:"
-        },
-        {
-          "type": "list",
-          "items": [
+          "type": "mosaic",
+          "layout": "pair",
+          "images": [
             {
-              "text": "General: ₡50 000"
+              "src": "assets/bimcon-trofeo.jpg",
+              "alt": "Trofeo de cristal de los BIM CON Awards, categoría Diseño de vivienda.",
+              "caption": "Trofeo de los BIM CON Awards."
             },
             {
-              "text": "Personas colegiadas: ₡43 000"
-            },
-            {
-              "text": "Estudiantes: ₡17 000"
+              "src": "assets/bimcon-awards-categorias.jpg",
+              "alt": "Las seis categorías de participación de los BIM CON Awards.",
+              "caption": "Seis categorías de participación."
             }
           ]
         },
         {
-          "type": "paragraph",
-          "text": "Las inscripciones están abiertas en https://congresobimcon.cfia.or.cr/inscripcion, y el programa completo puede descargarse en el sitio oficial del evento: https://congresobimcon.cfia.or.cr/"
-        },
-        {
-          "type": "link",
-          "text": "Inscribirse en BIM CON 2026",
-          "url": "https://congresobimcon.cfia.or.cr/inscripcion"
-        },
-        {
-          "type": "link",
-          "text": "Consultar el programa en el sitio oficial",
-          "url": "https://congresobimcon.cfia.or.cr/"
+          "type": "heading",
+          "text": "La energía de una comunidad"
         },
         {
           "type": "paragraph",
-          "text": "El evento cuenta con el patrocinio de Metalco (plata), COFEIA R.L., Durman, Grupo ICE, Macopa, Móviles y Novohogar (bronce)."
+          "text": "Más allá de las cifras, BIM CON 2026 dejó la imagen de una comunidad profesional que crece y se conecta alrededor de una visión compartida sobre el futuro de la construcción en Costa Rica."
+        },
+        {
+          "type": "image",
+          "src": "assets/bimcon-publico-de-pie.jpg",
+          "alt": "Asistentes de pie durante una dinámica en el salón principal.",
+          "caption": "Participación activa del público durante el congreso."
+        },
+        {
+          "type": "paragraph",
+          "text": "Esta edición reafirma el valor del BIM CON como plataforma de formación, intercambio profesional y promoción de la metodología BIM en Costa Rica."
+        },
+        {
+          "type": "quote",
+          "text": "“La innovación tecnológica dejó de ser una tendencia para convertirse en un componente estratégico para la transformación del sector AECO.”"
         }
       ],
       "sources": [],
-      "gallery": []
+      "gallery": [],
+      "imageCaption": "Apertura de BIM CON CFIA 2026, «Innovación al Servicio».",
+      "coverFit": "cover"
+    },
+    {
+      "id": "guia-ejecutiva-bim",
+      "area": "gestion-bim",
+      "title": "Guía Ejecutiva BIM: una ruta práctica para avanzar juntos",
+      "summary": "Conceptos claros, referencias técnicas y orientaciones para implementar BIM: mucho más que tecnología, una forma de colaborar y gestionar información.",
+      "author": "Arq. Miguel A. Vega Vargas",
+      "date": "27 octubre 2026",
+      "blocks": [
+        {
+          "type": "lead",
+          "text": "La Guía Ejecutiva BIM del CFIA acerca la metodología a profesionales, organizaciones y equipos de proyecto mediante conceptos claros, referencias técnicas y orientaciones para su implementación. Su principal mensaje es que BIM no se limita al uso de tecnología: requiere colaboración, procesos organizados y una gestión adecuada de la información."
+        },
+        {
+          "type": "heading",
+          "text": "Comprender BIM más allá del software"
+        },
+        {
+          "type": "paragraph",
+          "text": "La adopción de la metodología BIM implica mucho más que incorporar un programa informático o generar modelos tridimensionales. Requiere organizar procesos, definir responsabilidades, gestionar información y promover la colaboración entre los distintos actores que participan durante el ciclo de vida de un activo."
+        },
+        {
+          "type": "paragraph",
+          "text": "La Guía Ejecutiva BIM tiene como finalidad brindar lineamientos básicos y accesibles sobre los procesos necesarios para desarrollar proyectos bajo esta metodología en Costa Rica. El documento define BIM como el uso de una representación digital compartida de un activo construido para facilitar los procesos de diseño, construcción y operación, así como proporcionar una base confiable para la toma de decisiones."
+        },
+        {
+          "type": "paragraph",
+          "text": "Esta perspectiva permite comprender que BIM no es un software, un formato, una marca ni únicamente un modelo 3D. Su aplicación integra tecnologías, procesos y políticas que favorecen la interacción efectiva entre las partes involucradas en un proyecto."
+        },
+        {
+          "type": "paragraph",
+          "text": "La metodología se fundamenta en tres pilares: la colaboración entre las partes interesadas, el uso de entornos digitales comunes para gestionar la información y la integración de modelos paramétricos. Estos componentes permiten incorporar datos relacionados con planificación, costos, sostenibilidad, operación y otras necesidades del proyecto."
+        },
+        {
+          "type": "local-video",
+          "src": "assets/guia-ejecutiva-bim-video.mp4",
+          "title": "Video: Guía Ejecutiva BIM"
+        },
+        {
+          "type": "heading",
+          "text": "Cinco bloques para construir una visión integral"
+        },
+        {
+          "type": "paragraph",
+          "text": "La Guía organiza sus contenidos en cinco bloques temáticos: Introducción a BIM, Conceptos BIM, Estandarización BIM, Gestión de Información BIM e Implementación BIM. Estos contenidos también se presentan como volúmenes específicos, lo que facilita su consulta de acuerdo con las necesidades y el nivel de conocimiento de cada persona u organización."
+        },
+        {
+          "type": "paragraph",
+          "text": "El primer bloque introduce la metodología y muestra sus beneficios para diferentes participantes del sector. El segundo establece un marco conceptual compartido, indispensable para alinear expectativas, procesos, responsabilidades y terminología entre quienes intervienen en el ciclo de vida de un proyecto."
+        },
+        {
+          "type": "paragraph",
+          "text": "El apartado de estandarización explica que el éxito de BIM no depende únicamente de modelos o herramientas especializadas. Las organizaciones también deben estructurar su trabajo mediante esquemas estandarizados, interoperables y alineados con la normativa nacional e internacional, de manera que la información producida sea precisa, consistente y útil."
+        },
+        {
+          "type": "paragraph",
+          "text": "La sección de gestión de información aborda aspectos como los requisitos de información, el Nivel de Información Necesaria, el Entorno Común de Datos y el Plan de Ejecución BIM. Su enfoque parte de una pregunta esencial: qué información debe producirse, cómo debe organizarse, cuándo debe entregarse y quién debe validarla."
+        },
+        {
+          "type": "heading",
+          "text": "De la comprensión a la implementación"
+        },
+        {
+          "type": "paragraph",
+          "text": "La Guía reconoce que cada empresa o institución debe adaptar BIM a su propio contexto, recursos y objetivos. La implementación no responde a una única fórmula, sino a un proceso progresivo que combina estrategia, desarrollo de capacidades, estandarización y gestión del cambio."
+        },
+        {
+          "type": "paragraph",
+          "text": "A nivel organizacional, el documento propone una secuencia que incluye el diagnóstico inicial de madurez, el diseño de un plan estratégico, la formación y gestión del talento, la estandarización de procesos y herramientas, el liderazgo, la cultura organizacional y la evaluación continua. Entre los factores críticos de éxito también destaca el compromiso de la alta dirección, la definición de objetivos, la capacitación permanente y la promoción de una cultura de colaboración."
+        },
+        {
+          "type": "paragraph",
+          "text": "La Guía también posiciona al CFIA como articulador entre los sectores público, privado y académico. Desde esta función, el Colegio facilita el diálogo, promueve un lenguaje común y contribuye mediante guías, estándares técnicos, formación, eventos y espacios de colaboración."
+        },
+        {
+          "type": "paragraph",
+          "text": "Su publicación representa, por tanto, un recurso de consulta para profesionales y organizaciones que desean comprender BIM o fortalecer su proceso de adopción. En próximas ediciones del boletín se abordarán contenidos específicos de cada volumen, con el propósito de profundizar en sus conceptos y aplicaciones."
+        },
+        {
+          "type": "quote",
+          "text": "“BIM podría pensarse que es solo tecnología. Más bien, es una nueva forma de pensar, planificar y construir juntos.”",
+          "cite": "Arq. Rodrigo Martínez"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "text": "La Guía Ejecutiva BIM se estructura en cinco bloques temáticos: introducción, conceptos, estandarización, gestión de información e implementación."
+            },
+            {
+              "text": "BIM se apoya en tres pilares: colaboración, entornos digitales comunes y modelos paramétricos."
+            },
+            {
+              "text": "La implementación organizacional contempla diagnóstico, planificación estratégica, formación, estandarización, liderazgo y mejora continua."
+            },
+            {
+              "label": "Versión 1.0, octubre de 2026",
+              "text": "edición de la Guía reseñada en este artículo."
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "text": "Colegio Federado de Ingenieros y de Arquitectos de Costa Rica (CFIA). (2026). Guía Ejecutiva BIM. Versión 1.0.",
+          "links": []
+        }
+      ],
+      "gallery": [],
+      "image": "assets/guia-ejecutiva-bim-portada.png",
+      "imageAlt": "Portada de la Guía Ejecutiva BIM del CFIA, octubre de 2026, versión 1.0.",
+      "imageCaption": "Guía Ejecutiva BIM · Octubre 2026 · Versión 1.0.",
+      "imageFit": "contain"
     },
     {
       "id": "disenar-realidad-virtual-innovacion",
@@ -1437,7 +1612,7 @@ window.BOLETIN = {
   ],
   "agenda": [],
   "coverImage": {
-    "src": "assets/portada-eric.jpg",
-    "alt": "Entrevista en Nuestra Voz sobre el Reporte de Infraestructura 2026."
+    "src": "assets/bimcon-apertura.jpg",
+    "alt": "Apertura de BIM CON CFIA 2026 «Innovación al Servicio», con un orador en el podio frente a la pantalla principal y el público."
   }
 };

@@ -443,6 +443,40 @@
     return b;
   }
 
+  function localVideo(block) {
+    const box = el('section', 'article-local-video');
+    const title = block.title || 'Video del artículo';
+    box.setAttribute('aria-label', title);
+    const video = el('video');
+    video.controls = true;
+    video.playsInline = true;
+    video.preload = 'metadata';
+    // Reproducción automática: los navegadores solo la permiten sin sonido.
+    if (block.autoplay) {
+      video.muted = true;
+      video.autoplay = true;
+      video.loop = true;
+      video.setAttribute('muted', '');
+      video.preload = 'auto';
+    }
+    video.setAttribute('aria-label', title);
+    const url = safeURL(block.src);
+    if (url) {
+      const source = el('source');
+      source.src = url;
+      source.type = 'video/mp4';
+      video.append(source);
+      // Visor a pantalla completa dentro del sitio, con botón de cerrar y Esc.
+      const expand = el('button', 'text-link video-expand', 'Ver en pantalla completa ');
+      expand.type = 'button';
+      expand.append(arrow('⤢', ''));
+      expand.addEventListener('click', () => openVideo(video, url, title));
+      if (block.caption) box.append(video, el('p', 'video-caption', block.caption), expand);
+      else box.append(video, expand);
+    }
+    return box;
+  }
+
   function renderBlocks(article, content) {
     function addReferences(node, refs) {
       (refs || []).forEach(number => {
@@ -503,28 +537,45 @@
           element.append(table);
           break;
         }
-        case 'local-video': {
-          element = el('section', 'article-local-video');
-          element.setAttribute('aria-label', block.title || 'Video del artículo');
-          const video = el('video');
-          video.controls = true;
-          video.playsInline = true;
-          video.preload = 'metadata';
-          video.setAttribute('aria-label', block.title || 'Video del artículo');
-          const url = safeURL(block.src);
-          if (url) {
-            const source = el('source');
-            source.src = url;
-            source.type = 'video/mp4';
-            video.append(source);
-            // Antes: enlace que abría el .mp4 en la misma pestaña, sin forma de volver.
-            // Ahora: visor a pantalla completa dentro del sitio, con botón de cerrar y Esc.
-            const expand = el('button', 'text-link video-expand', 'Ver en pantalla completa ');
-            expand.type = 'button';
-            expand.append(arrow('⤢', ''));
-            expand.addEventListener('click', () => openVideo(video, url, block.title || 'Video del artículo'));
-            element.append(video, expand);
-          }
+        case 'local-video':
+          element = localVideo(block);
+          break;
+        case 'stats': {
+          // Cifras destacadas: número grande + etiqueta.
+          element = el('div', 'article-stats');
+          block.items.forEach(item => {
+            const box = el('div', 'stat');
+            box.append(el('strong', '', item.value), el('span', '', item.label));
+            element.append(box);
+          });
+          break;
+        }
+        case 'pillars': {
+          // Ejes o pilares numerados en tarjetas.
+          element = el('div', 'article-pillars');
+          block.items.forEach((item, i) => {
+            const card = el('div', 'pillar');
+            card.append(el('span', 'pillar-num', String(i + 1).padStart(2, '0')), el('strong', '', item.title));
+            if (item.text) card.append(el('p', '', item.text));
+            element.append(card);
+          });
+          break;
+        }
+        case 'mosaic': {
+          // Mosaico de fotografías: la primera ocupa más espacio.
+          element = el('div', `article-mosaic${block.layout ? ' mosaic-' + block.layout : ''}`);
+          block.images.forEach(photo => {
+            const fig = el('figure');
+            fig.append(picture(photo.src, photo.alt));
+            if (photo.caption) fig.append(el('figcaption', '', photo.caption));
+            element.append(fig);
+          });
+          break;
+        }
+        case 'video-group': {
+          // Varios videos locales uno al lado del otro.
+          element = el('div', 'article-video-group');
+          block.videos.forEach(v => element.append(localVideo(v)));
           break;
         }
         case 'video': {
@@ -588,6 +639,11 @@
         }
         default:
           element = el(block.type === 'quote' ? 'blockquote' : 'p', block.type === 'callout' ? 'article-callout' : '', block.text);
+          // Cita con autor: "cite" en contenido.js se muestra debajo del texto.
+          if (block.type === 'quote' && block.cite) {
+            const p = el('p', 'quote-text', block.text);
+            element.replaceChildren(p, el('cite', 'quote-cite', `— ${block.cite}`));
+          }
       }
       if (block.type === 'paragraph' && block.emphasis && block.text.includes(block.emphasis)) {
         const start = block.text.indexOf(block.emphasis);
