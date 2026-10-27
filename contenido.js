@@ -1,6 +1,6 @@
 window.BOLETIN = {
   "edition": "02",
-  "period": "Mayo — Setiembre 2026",
+  "period": "Mayo — Octubre 2026",
   "year": "2026",
   "areas": [
     {
